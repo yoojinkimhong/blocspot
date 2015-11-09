@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgb-xG-po5">
+                                <rect key="frame" x="266" y="96" width="69" height="30"/>
+                                <state key="normal" title="Calculate!"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="86H-aP-RF3">
+                                <rect key="frame" x="241" y="58" width="118" height="31"/>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="% Alcohol Content per Beer&quot;" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ouT-OG-hux">
+                                <rect key="frame" x="20" y="20" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSb-T4-CX7">
+                                <rect key="frame" x="279" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ouT-OG-hux" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3Cc-w2-ghe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ouT-OG-hux" secondAttribute="leading" id="87o-lt-w19"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ouT-OG-hux" secondAttribute="trailing" id="8dX-Tr-Cip"/>
+                            <constraint firstItem="86H-aP-RF3" firstAttribute="centerX" secondItem="ouT-OG-hux" secondAttribute="centerX" id="HyW-vk-Ez9"/>
+                            <constraint firstItem="HSb-T4-CX7" firstAttribute="top" secondItem="Zgb-xG-po5" secondAttribute="bottom" constant="8" id="IZd-iO-Mt6"/>
+                            <constraint firstItem="86H-aP-RF3" firstAttribute="top" secondItem="ouT-OG-hux" secondAttribute="bottom" constant="8" id="Rg0-Ja-UNE"/>
+                            <constraint firstItem="Zgb-xG-po5" firstAttribute="top" secondItem="86H-aP-RF3" secondAttribute="bottom" constant="8" id="VdU-In-kln"/>
+                            <constraint firstItem="86H-aP-RF3" firstAttribute="width" secondItem="ouT-OG-hux" secondAttribute="width" id="d36-x2-bo9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HSb-T4-CX7" secondAttribute="trailing" constant="259" id="dZ3-cr-pgz"/>
+                            <constraint firstItem="HSb-T4-CX7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="259" id="hCC-wB-iDh"/>
+                            <constraint firstItem="Zgb-xG-po5" firstAttribute="centerX" secondItem="86H-aP-RF3" secondAttribute="centerX" id="obM-ZS-7XJ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="uZ4-NH-Ggs" appends="YES" id="dmP-WG-geh"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="uZ4-NH-Ggs"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="376"/>
+        </scene>
+    </scenes>
+</document>
